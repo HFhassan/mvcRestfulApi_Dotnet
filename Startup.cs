@@ -32,6 +32,7 @@ namespace Commander
                 Configuration.GetConnectionString("CommanderConnection")
             ));
 
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllers();
             services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
 
