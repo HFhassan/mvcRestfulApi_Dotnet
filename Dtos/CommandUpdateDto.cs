@@ -4,7 +4,7 @@ namespace  Commander.Dtos
 {
     
 
- public class CommandCreateDto
+ public class CommandUpdateDto
     {
         [Required]
         [MaxLength(250)]
